@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Report</h2>
+<div>{{ html|safe }}</div>
+<h3>MITRE Heatmap</h3>
+<ul>
+  {% for t, v in heatmap.items() %}
+    <li>{{ t }} — {{ '✔' if v else '❌' }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

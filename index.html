@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Run Simulation</h2>
+<form method="post">
+  <select name="template">
+    {% for t in templates %}
+      <option>{{ t }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Run</button>
+</form>
+{% endblock %}

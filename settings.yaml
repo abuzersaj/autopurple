@@ -1,0 +1,4 @@
+openai_api_key: "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
+SECRET_KEY: "supersecret"
+JWT_SECRET_KEY: "jwt-secret-string"
+DATABASE_URI: "postgresql://user:password@localhost/autopurple_db"

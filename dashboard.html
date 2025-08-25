@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Purple Dashboard</h2>
+<canvas id="heatmapChart" width="600" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('heatmapChart').getContext('2d');
+const data = {
+  labels: {{ labels|safe }},
+  datasets: [{
+    label: 'Detection Success',
+    data: {{ data|safe }},
+    backgroundColor: {{ colors|safe }}
+  }]
+};
+new Chart(ctx, { type: 'bar', data: data });
+</script>
+{% endblock %}
