@@ -93,6 +93,7 @@ autopurple/
 
 `bash
 git clone https://github.com/abuzersaj/autopurple.git
+
 cd autopurple
 
  2. Setup virtual environment
@@ -180,3 +181,4 @@ If you liked this project:
 * 🐛 Report issues / suggest improvements
 
 Let’s make Purple Teaming smarter. Together. 💣
+
